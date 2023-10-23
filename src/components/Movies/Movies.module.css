@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    background-color: rgb(53, 52, 52);
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.subContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}

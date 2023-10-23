@@ -1,0 +1,86 @@
+.container{
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subContainer{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 80%;
+    height: 75%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.containerInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.containerInfo2{
+    padding:0 20px 20px 20px;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.img{
+    border-radius: 10px;
+    width: 600px;
+}
+
+.lenguaje{
+    width: 60px;
+    margin: 0 0 0 20px;
+}
+
+.h2lenguaje{
+    display: flex;
+    align-items: center;
+}
+
+.votos{
+    text-align:justify;
+    display: flex;
+    align-items: center;
+}
+
+.votosIcon{
+    color: yellow;
+    font-size: 30px;
+    padding: 0 0 0 10px;
+}
+
+.parrafo{
+    font-size: 16px;
+    text-align: justify;
+}
+
+.close{
+    color:white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 90px;
+    right: 140px;
+}
+
+.close:hover{
+    color: red
+}

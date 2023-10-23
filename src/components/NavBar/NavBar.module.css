@@ -1,0 +1,142 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 15px 40px;
+  transition: background-color 0.7s ease-out; /* Usamos background-color en lugar de background-image */
+  position: fixed;
+  width: 100%;
+  height: 60px; /* Fondo de degradado en lugar de background-image */
+  z-index: 4;
+}
+
+.scroll {
+  background-color: #1b1b1b; /* Cambiamos el fondo al mismo valor del fondo más oscuro del degradado */
+}
+
+.notScroll {
+  background-color: transparent; /* Cambiamos el fondo a transparente */
+}
+
+.logo {
+  width: 150px;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul a {
+  display: inline;
+  margin: 0 15px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.div2 button {
+  background: transparent;
+  color: white;
+  border: none;
+  margin: 0 15px;
+}
+
+.div2 button:hover {
+  cursor: pointer;
+}
+
+.btn {
+  font-size: 20px;
+}
+
+.btnHambur {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .ul {
+    position: absolute;
+    top: -700px;
+    left: -2000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    background-color: rgb(45, 45, 45);
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0 0 90% 0;
+    transition: opacity 0.50s ease-in-out, top 0.7s ease-in-out,
+      left 0.7s ease-in-out;
+  }
+
+  .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+  }
+
+  .ul.active {
+    position: fixed;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin-top: 80px;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0 0 90% 0;
+    list-style-type: none;
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Centra tanto vertical como horizontalmente */
+    opacity: 1;
+    transition: opacity 0.50s ease-in-out, top 0.7s ease-in-out,
+      left 0.7s ease-in-out;
+  }
+
+  .ul a {
+    display: block;
+    margin: 20px 0;
+    font-size: 20px;
+    background-color: red;
+    width: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .ul a:hover{
+    background-color: rgb(155, 0, 0);
+  }
+
+  .div2 {
+    display: none;
+  }
+
+  .btnHambur {
+    display: block;
+    background: transparent;
+    border: none;
+    color: white;
+    margin: 0 80px;
+  }
+}
