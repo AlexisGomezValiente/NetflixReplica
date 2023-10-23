@@ -34,7 +34,7 @@ const Modal = () => {
           <div className={styles.containerInfo2}>
             <img className={styles.img} src={img(movie.backdrop_path)} alt="" />
           </div>
-          <div className={styles.containerInfo2}>
+          <div className={styles.containerInfo3}>
             <h2 className={styles.description}>Description</h2>
             <p className={styles.parrafo}>{movie.overview}</p>
             <h2 className={styles.date}>
