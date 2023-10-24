@@ -42,6 +42,7 @@
 .titulo{
     font-size: 30px;
     font-weight: bold;
+    margin-bottom: -10px;
 }
 
 .img{
@@ -95,6 +96,7 @@
     .titulo{
         font-size: 25px;
         text-align: center;
+        margin-bottom: 0;
     }
 
     .img{
@@ -122,7 +124,6 @@
 
     .subContainer{
         padding: 30px;
-        height: 80%;
     }
 
     h2{
@@ -137,6 +138,19 @@
 
     .containerInfo2{
         width: 250px;
+    }
+
+    .img{
+        width: 200px;
+    }
+
+    .parrafo{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 16px;
+        margin-bottom: -5px;
     }
 
     .close{
