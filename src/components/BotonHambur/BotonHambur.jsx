@@ -16,10 +16,10 @@ const BotonHambur = (props) => {
     <div onClick={() => {
       handleClick();
       cambiarNav()
-    }} class={`${styles.hamburger} ${hambur ? styles.isActive: ''}`} id={styles.hamburger1}>
-      <span class={styles.line}></span>
-      <span class={styles.line}></span>
-      <span class={styles.line}></span>
+    }} className={`${styles.hamburger} ${hambur ? styles.isActive: ''}`} id={styles.hamburger1}>
+      <span className={styles.line}></span>
+      <span className={styles.line}></span>
+      <span className={styles.line}></span>
     </div>
   );
 };

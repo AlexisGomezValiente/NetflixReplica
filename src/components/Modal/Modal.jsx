@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 const Modal = () => {
   const id = useParams().id;
+  console.log(id)
   const dispatch = useDispatch();
   const movie = useSelector((state) => state.movieModal);
 
